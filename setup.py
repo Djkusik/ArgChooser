@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='argchoose',
@@ -6,6 +6,8 @@ setup(
     version='0.1',
     license='MIT',
     description='Choose which functions to execute by simply creating clear cmdline menu and cmdline args parser in one step',
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     author='Paweł Kusiński',
     author_email='KusinskiP@protonmail.com',
     url='https://github.com/Djkusik/ArgChooser',

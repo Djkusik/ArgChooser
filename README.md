@@ -33,8 +33,10 @@ Using ArgChooser is as simple as possible. Simple three steps:
 ```python
 from argchoose import ArgChooser
 
+
 def foo():
     print('bar')
+
 
 ac = ArgChooser()
 ac.add_argument('-f', '--foo', method=foo)
@@ -48,7 +50,7 @@ python example.py -f
 ```
 Or without flags to see this:
 
-![Quickstart menu example](./docs/images/quickstart_menu.png?raw=true "Quickstart menu example")
+![Quickstart menu example](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/quickstart_menu.png)
 
 ### Examples
 
@@ -68,7 +70,7 @@ Example is based on [This](./examples/default_usage.py "This").
 
 Categories allows to make menu clearer.
 
-![Default menu example](./docs/images/default_menu_example.png "Default menu example")
+![Default menu example](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/default_menu_example.png)
 
 As You can see, ``help`` also makes it more descriptive, but also could be printed using -h flag like cmdline tools usually do!
 
@@ -76,13 +78,13 @@ As You can see, ``help`` also makes it more descriptive, but also could be print
 python default_usage.py -h
 ```
 
-![Default help](./docs/images/default_help.png "Default help")
+![Default help](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/default_help.png)
 
 To execute chosen methods, end-user has to choose, if they want to use it straight from cmdline or menu:
 
-![Default menu results](./docs/images/default_menu_results.png "Default menu results")
+![Default menu results](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/default_menu_results.png)
 
-![Default cmdline](./docs/images/default_cmdline.png "Default cmdline")
+![Default cmdline](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/default_cmdline.png)
 
 #### Changing default ArgChooser parameters
 
@@ -106,15 +108,15 @@ Default functions checks if any answer is chosen.
 ``validation_error`` is string which will be printed if ``validation_func`` returned ``False``.  
 Default is ``You must choose at least one module.``.
 
-![Example](./docs/images/init_args.png "Example")
+![Example](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/init_args.png)
 
 When ``validation_func`` return ``False``, ``validation_error`` is printed like that:
 
-![Error](./docs/images/validation_error.png "Error")
+![Error](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/validation_error.png)
 
 This is going to be changed to this, after releasing new version of PyInquirer with fixed ``validation`` parameter:
 
-![Correct error](./docs/images/correct_error.png "Correct error")
+![Correct error](https://raw.githubusercontent.com/Djkusik/ArgChooser/master/docs/images/correct_error.png)
 
 
 ## License
