@@ -46,7 +46,7 @@ ac.execute()
 Now You are able to run your program from cmdline like that to execute method:
 
 ```python
-python example.py -f
+python quick_start.py -f
 ```
 Or without flags to see this:
 
@@ -66,7 +66,7 @@ Takes ``*flags: str``, ``method: Callable`` [, ``help: str``, ``category: str``]
 
 Returns nothing.
 
-Example is based on [This](./examples/default_usage.py "This").
+Example is based on [This](https://github.com/Djkusik/ArgChooser/blob/master/examples/default_usage.py).
 
 Categories allows to make menu clearer.
 
@@ -88,7 +88,7 @@ To execute chosen methods, end-user has to choose, if they want to use it straig
 
 #### Changing default ArgChooser parameters
 
-``ArgChooser`` could be initialized without any parameters, but gives possibility to change a few little things as shown [Here](./examples/init_arguments.py "Here").
+``ArgChooser`` could be initialized without any parameters, but gives possibility to change a few little things as shown [Here](https://github.com/Djkusik/ArgChooser/blob/master/examples/init_arguments.py).
 
 Takes [``category_style: str``, ``default_category_name: str``, ``style: Dict[Token, str]``, ``validation_func: Callable(List) -> bool``, ``validation_error: str``].
 
